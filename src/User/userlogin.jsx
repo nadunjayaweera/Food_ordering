@@ -8,6 +8,7 @@ import FormLabel from '@mui/joy/FormLabel';
 import Input from '@mui/joy/Input';
 import Button from '@mui/joy/Button';
 import Link from '@mui/joy/Link';
+// import foodimage from "./image/foodimage.jpg";
 
 export default function Userlogin() {
   const [errorMessage, setErrorMessage] = React.useState(null);
@@ -54,17 +55,19 @@ export default function Userlogin() {
             gap: 2,
             borderRadius: 'sm',
             boxShadow: 'md',
+            // backgroundImage: `url(${foodimage})`,
+            // backgroundSize: 'cover',
           }}
           variant="outlined"
         >
           <div>
             <Typography level="h4" component="h1">
-              <b>Welcome!</b>
+              <b>LET'S STRAY YOUR ORDER</b>
             </Typography>
             <Typography level="body2">Sign in to continue.</Typography>
           </div>
           <FormControl>
-            <FormLabel>Email</FormLabel>
+            <FormLabel>Username*</FormLabel>
             <Input
               // html input attribute
               name="email"
@@ -73,7 +76,7 @@ export default function Userlogin() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel>Password</FormLabel>
+            <FormLabel>Password*</FormLabel>
             <Input
               // html input attribute
               name="password"
