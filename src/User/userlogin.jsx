@@ -55,19 +55,19 @@ export default function Userlogin() {
             gap: 2,
             borderRadius: 'sm',
             boxShadow: 'md',
-            // backgroundImage: `url(${foodimage})`,
-            // backgroundSize: 'cover',
+            backgroundImage: 'url(https://i.pinimg.com/originals/da/cc/c4/daccc4dbab13c70b3058e60d14314559.jpg)',
+            backgroundSize: 'cover',
           }}
           variant="outlined"
         >
           <div>
-            <Typography level="h4" component="h1">
+            <Typography level="h4" component="h1" color="white">
               <b>LET'S STRAY YOUR ORDER</b>
             </Typography>
-            <Typography level="body2">Sign in to continue.</Typography>
+            <Typography level="body2" color="white">Log in to continue.</Typography>
           </div>
           <FormControl>
-            <FormLabel>Username*</FormLabel>
+            <FormLabel sx={{ color: 'white' }}>Username*</FormLabel>
             <Input
               // html input attribute
               name="email"
@@ -76,7 +76,7 @@ export default function Userlogin() {
             />
           </FormControl>
           <FormControl>
-            <FormLabel>Password*</FormLabel>
+            <FormLabel sx={{ color: 'white' }}>Password*</FormLabel>
             <Input
               // html input attribute
               name="password"
@@ -94,7 +94,7 @@ export default function Userlogin() {
           <Typography
             endDecorator={<Link href="/signup">Sign up</Link>}
             fontSize="sm"
-            sx={{ alignSelf: 'center' }}
+            sx={{ alignSelf: 'center', color: 'white' }}
           >
             Don&apos;t have an account?
           </Typography>
